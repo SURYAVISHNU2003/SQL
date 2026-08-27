@@ -28,3 +28,7 @@ select avg(salary),dept from employee group by dept order by dept asc
 
 //Find the dept with the highest avg salary
 select avg(salary),dept from employee group by dept order by dept desc limit 1
+
+// having
+select avg(salary),dept from employee group by dept having avg(salary) < 60000
+
