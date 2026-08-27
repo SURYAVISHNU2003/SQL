@@ -1,0 +1,14 @@
+create table employee(
+employee_id int,
+firstname varchar(100),
+lastname varchar(100),
+Department varchar(100),
+salary int
+);
+
+insert into employee values(1,"John","doe","HR",55000);
+insert into employee values(2,"Jane","smith","IT",60000);
+insert into employee values(3,"Bob","Johnson","IT",62000);
+insert into employee values(4,"Alice","williams","HR",54000);
+insert into employee values(5,"eva","davis","FINANCE",58000);
+insert into employee values(16,"Mike","brown","FINANCE",59000);
