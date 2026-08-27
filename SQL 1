@@ -12,3 +12,19 @@ insert into employee values(3,"Bob","Johnson","IT",62000);
 insert into employee values(4,"Alice","williams","HR",54000);
 insert into employee values(5,"eva","davis","FINANCE",58000);
 insert into employee values(16,"Mike","brown","FINANCE",59000);
+
+
+// List all employees in alphatic order by lastname
+select * from employee order by lastname asc
+
+// LIST ALL EMPLOYEES IN THE IT DEPARTMENT AND SORT THEM BY SALARY IN DESCENDING ORDER:
+select * from employee where department= "IT" order by salary desc
+
+// FIND THE TOTAL NUMBER OF EMPLOYEES IN EACH DEPARTMENT:
+select count(*),dept from employee group by dept
+
+//CALCULATE THE AVERAGE SALARY FOR EACH DEPARTMENT, SORTED IN ASCENDING ORDER BY DEPARTMENT NAME:
+select avg(salary),dept from employee group by dept order by dept asc
+
+//Find the dept with the highest avg salary
+select avg(salary),dept from employee group by dept order by dept desc limit 1
