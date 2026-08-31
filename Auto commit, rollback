@@ -1,0 +1,26 @@
+
+Create table teacher(
+name varchar(100),
+age varchar(100),
+salary int,
+dept varchar(100),
+degree varchar(100),
+mobile_number varchar(100)
+);
+
+INSERT INTO teacher
+VALUES
+("priya", '32', 30000, "CSE", "ME-CSE", 8765432198),
+("viji", '29', 24000, "Maths", "BSC-Maths", 0987654321),
+("harini", '28', 22000, "English", "MA English", 9787979798);
+
+
+set autocommit =0;
+
+update teacher set age="33" where dept="CSE"
+
+select * from teacher;
+
+rollback;
+
+commit;
