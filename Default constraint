@@ -1,0 +1,10 @@
+create table products(
+p_id int,
+p_name varchar(100),
+price decimal(6,2) default 10
+);
+
+insert into products (p_id,p_name) values
+(1,"Boost")
+
+select * from products
