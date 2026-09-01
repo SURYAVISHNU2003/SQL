@@ -1,0 +1,19 @@
+create table products(
+p_id int,
+p_name varchar(100) not null,
+price decimal(6,2)
+);
+
+insert into products(p_id,price) values
+(1, 300.45);
+
+drop table products
+
+
+create table products(
+p_id int,
+p_name varchar(100),
+price decimal(6,2)
+);
+
+alter table products modify p_name varchar(100) not null;
