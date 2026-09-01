@@ -8,3 +8,6 @@ constraint check_price check(price <100)
 insert into products values(1,"Boost", 9.55)
 
 select * from products
+
+
+alter table products add constraint check_price (price <100)
