@@ -1,0 +1,23 @@
+use dummy;
+
+create table products(
+p_id int,
+p_name varchar(100) unique,
+price decimal(6,2)
+);
+
+select * from products
+
+insert into products values(1,"rice", 300.45);
+
+insert into products values(2,"rice",400.44);
+
+drop table products;
+
+create table products(
+p_id int,
+p_name varchar(100),
+price decimal(6,2)
+);
+
+alter table products add constraint unique(p_name);
