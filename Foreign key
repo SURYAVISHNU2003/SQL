@@ -1,0 +1,31 @@
+use dummy;
+
+create table customer
+(
+c_id int primary key auto_increment,
+c_name varchar(100),
+age int
+);
+
+insert into customer(c_name,age)
+values("John",24),
+      ("surya",27),
+      ("jai",22);
+
+select * from customer;
+
+create table transaction
+(
+t_id int primary key auto_increment,
+amount decimal(6,2),
+customer_id int,
+foreign key(customer_id) references customer(c_id)
+);
+
+insert into transaction(amount, customer_id)
+values(400.89,3);
+ 
+select * from transaction
+
+
+
