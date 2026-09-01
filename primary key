@@ -1,0 +1,14 @@
+use dummy;
+
+create table transaction(
+t_id int primary key,
+amout decimal(6,2)
+);
+
+insert into transaction values(1,344.67)
+
+insert into transaction values(2,378.98)
+
+
+insert into transaction (amout)
+values (100)
